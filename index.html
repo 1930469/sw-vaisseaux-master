@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SW Vaisseaux</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+    <!-- page content -->
+	<h1 class="row justify-content-center">Générateur de vaisseaux Star Wars</h1>
+	<div class="row justify-content-center">
+		<button type="button" id="btn" class="btn btn-dark" >Générer un nouveau vaisseau</button>
+	</div>
+	<div class="row justify-content-center">
+		<div role="alert" id="alert" ></div>
+	</div>
+	</div>
+	<!-- Exemple avec le vaisseau #10 -->
+	<!-- https://swapi.dev/api/starships/10/ -->
+	<h2 class="row justify-content-center">Informations</h2>
+		<div class="row justify-content-center">
+			<table class="table table-hover table-dark col-lg-8 col-md-8 col-sm-12 col-xs-12">
+			<tr>
+				<th>Nom</td>
+				<td id="nomVaisseaux">Millenium Falcon</td>
+			</tr>
+			<tr>
+				<th>Modèle</td>
+				<td id="modeleVaiseaux">YT-1300 light freighter</td>
+			</tr>
+			<tr>
+				<th>Classe</td>
+				<td  id="classeVaiseaux">Light freighter</td>
+			</tr>
+			<tr>
+				<th>Fabricant</td>
+				<td id="fabricantVaisseaux">Corellian Engineering Corporation</td>
+			</tr>
+			<tr>
+				<th>Coût (en crédits)</td>
+				<td id="coutVaisseaux">100000</td>
+			</tr>
+			<tr>
+				<th>Taille (en mètres)</td>
+				<td id="tailleVaisseaux">34.37</td>
+			</tr>
+			<tr>
+				<th>Nombre de membres de l'équipage</td>
+				<td id="nbrMembreVaisseaux">4</td>
+			</tr>
+			<tr>
+				<th>Nombre de passagers</td>
+				<td id="nbrPassagerVaisseaux">6</td>
+			</tr>
+			<tr>
+				<th>Capacité de chargement maximale (en kg)</td>
+				<td id="capaciteVaisseaux">100000</td>
+			</tr>
+			</table>
+		</div>
+	<div class="container-fluid">
+		<h2 class="row justify-content-center">Pilotes</h2>
+			<div class="row justify-content-center">
+				<table id="tablePerso" class="table table-hover table-dark col-lg-6 col-md-6 col-sm-10 col-xs-10"></table>
+			</div>
+	</div>
+	<div class="container-fluid">
+		<h2 class="row justify-content-center">Films</h2>
+			<div class="row justify-content-center">
+				<table id="tableFilm" class="table table-hover table-dark col-lg-6 col-md-6 col-sm-10 col-xs-10"></table>
+			</div>
+	</div>
+	
+	
+	<!-- scripts -->
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="static/js/script.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </body>
+</html>

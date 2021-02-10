@@ -1,0 +1,22 @@
+{
+  "name": "sw-vaisseaux",
+  "version": "1.0.0",
+  "description": "Laboratoire #1 du cours Web transactionnel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node node_modules/sass/sass.js src/sass/style.sass static/css/style.css"
+  },
+  "author": "Sulli Thiboult",
+  "license": "ISC",
+  "devDependencies": {
+    "package": "^1.0.1",
+    "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
+    "package.json": "^2.0.1"
+  }
+}
